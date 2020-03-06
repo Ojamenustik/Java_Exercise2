@@ -15,7 +15,7 @@ public class Main {
 
     public static class Robot extends Machine{
         public void Beep() {
-            System.out.print("How can i help u?");
+            System.out.print("How can i help you?");
             super.Beep();
         }
     }
