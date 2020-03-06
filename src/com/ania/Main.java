@@ -9,7 +9,7 @@ public class Main {
 
     public static class Machine{
         public void Beep(){
-            System.out.println("Beep");
+            System.out.println("Beep2");
         }
     }
 
