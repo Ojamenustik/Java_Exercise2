@@ -3,6 +3,7 @@ package com.ania;
 
 import java.util.ArrayList;
 
+
 //Polymorphism
 
 public class Main {
@@ -76,7 +77,7 @@ public class Main {
         list.add("one");
         list.add("two");
 
-
+        Generics.showList(list);
 
     }
 }
