@@ -71,5 +71,12 @@ public class Main {
             machine.Beep();
         }
 
+        ArrayList<String> list = new ArrayList<String>();
+
+        list.add("one");
+        list.add("two");
+
+
+
     }
 }
