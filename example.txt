@@ -1,0 +1,6 @@
+5
+dog
+cat
+fox
+snake
+tiger
