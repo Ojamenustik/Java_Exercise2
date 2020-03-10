@@ -99,7 +99,7 @@ public class Main {
         while(in.hasNextLine()){
             String line = in.nextLine();
 
-            System.out.println(count + " : " + line);
+            System.out.println(count + ": " + line);
             count++;
         }
 
@@ -121,6 +121,26 @@ public class Main {
         catch (IOException e){
             System.out.println("Unable to read file: "+ file.toString());
         }
+
+
+        //////// Creating and Writing Text Files ////////////
+
+        File file2 = new File("text.txt");
+
+        try(BufferedWriter bw = new BufferedWriter(new FileWriter(file2))){
+            String line;
+
+            bw.write("Line from Java program.");
+            bw.newLine();
+            bw.write("Second line.");
+        }
+        catch (FileNotFoundException e){
+            System.out.println("File not found: " + file2.toString());
+        }
+        catch (IOException e){
+            System.out.println("Unable to read file: "+ file2.toString());
+        }
+
 
     }
 }

@@ -1,6 +1,4 @@
-5
+3
+fox
 dog
 cat
-fox
-snake
-tiger
