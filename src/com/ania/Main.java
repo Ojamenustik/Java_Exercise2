@@ -107,11 +107,8 @@ public class Main {
     /////// Reading File with File Reader //////////
 
         File file = new File("example.txt");
-        BufferedReader br = null;
-        try{
-            FileReader fr = new FileReader(file);
-             br = new BufferedReader(fr);
 
+        try(BufferedReader br = new BufferedReader(new FileReader(file))){
             String line;
 
             while( (line = br.readLine()) != null ){
@@ -123,16 +120,6 @@ public class Main {
         }
         catch (IOException e){
             System.out.println("Unable to read file: "+ file.toString());
-        }
-        finally{
-            try{
-                br.close();
-            } catch (IOException e) {
-                System.out.println("Unable to close file: " + file.toString());
-            }
-            catch (NullPointerException ex){
-
-            }
         }
 
     }
